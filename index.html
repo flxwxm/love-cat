@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> 
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+   <!-- navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand logo" href="#"><img src="img/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 首页</a></li>
+        <li class="dropdown">
+          <a href="#"  class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-certificate"></i> 商城 <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">猫咪粮食</a></li>
+            <li><a href="#">猫咪医疗</a></li>
+            <li><a href="#">猫咪清洁</a></li>
+            <li><a href="#">猫咪玩具</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-thumbs-up"></i> 服务 <b class="caret"></b></a>
+           <ul class="dropdown-menu">
+            <li><a href="#">洗护</a></li>
+            <li><a href="#">寄养</a></li>
+            <li><a href="#">造型</a></li>
+            <li><a href="#">训练</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-heart"></i> 百科 <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">猫咪大全</a></li>
+            <li><a href="#">猫咪饲养</a></li>
+            <li><a href="#">猫咪训练</a></li>
+            <li><a href="#">猫咪医疗</a></li>
+            <li class="divider"></li>
+            <li><a href="#">问答专区</a></li>
+          </ul>
+        </li>          
+        <li><a href="#myModal" data-toggle="modal"><i class="glyphicon glyphicon-exclamation-sign"></i> 关于</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+     </div> 
+  </div>
+</nav>
+
+<!-- banner -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active" id="banner-1">
+      <img src="img/index/banner-1.jpg" alt="..." class="center-block">
+      <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>
+    </div>
+    <div class="item" id="banner-2">
+      <img src="img/index/banner-2.jpg" alt="..." class="center-block">
+       <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>  
+    </div>
+    <div class="item" id="banner-3">
+      <img src="img/index/banner-3.jpg" alt="..." class="center-block">
+      <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>
+    </div>
+    <div class="item" id="banner-4">
+      <img src="img/index/banner-4.jpg" alt="..." class="center-block">
+      <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>
+    </div>
+    <div class="item" id="banner-5">
+      <img src="img/index/banner-5.jpg" alt="..." class="center-block">
+      <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>
+    </div>
+    <div class="item" id="banner-6">
+      <img src="img/index/banner-6.jpg" alt="..." class="center-block">
+      <div class="carousel-caption">
+        <a href="#" class="btn btn-primary hidden-xs">下载壁纸</a>
+      </div>
+    </div>
+    
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div class="container download">
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <img src="img/index/a-1.jpg" class="img-responsive center-block">
+      <h4>超可爱喵壁纸</h4>
+      <p>这里有许多超可爱的喵星人壁纸，快带走吧！</p>
+      <a href="#" class="btn btn-primary">前往下载</a>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <img src="img/index/a-2.jpg" class="img-responsive center-block">
+      <h4>喵星人冷知识</h4>
+      <p>你真了解你家主子吗？快来看看这些冷知识！</p>
+      <a href="#" class="btn btn-primary">好好学习</a>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <img src="img/index/a-3.jpg" class="img-responsive center-block">
+      <h4>猫咪百货</h4>
+      <p>主子吃的香，玩的嗨，所有的秘诀都在这里！</p>
+      <a href="#" class="btn btn-primary">买买买买</a>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <img src="img/index/a-4.jpg" class="img-responsive center-block">
+      <h4>喵医生在线</h4>
+      <p>家里主子有异常，你有疑惑，都可以询问哦！</p>
+      <a href="#" class="btn btn-primary">前往询问</a>
+    </div>
+  </div>
+</div>
+
+<!-- tabs -->
+<div class="tabs container">
+<h3>猜你喜欢</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#01" data-toggle="tab">布偶猫</a></li>
+    <li><a href="#02" data-toggle="tab">暹罗猫</a></li>
+    <li><a href="#03" data-toggle="tab">苏格兰折耳猫</a></li>
+    <li><a href="#04" data-toggle="tab">英国短毛猫</a></li>
+    <li><a href="#05" data-toggle="tab">美国短毛猫</a></li>
+    <li><a href="#06" data-toggle="tab">波斯猫</a></li>
+  </ul>
+<!-- Tab panes -->
+  <div class="tab-content container">   
+      <div class="tab-pane active row fade in" id="01">
+        <div class="col-md-5"> 
+          <img src="img/index/tab-1.jpg" class="img-responsive center-block img-circle">
+        </div>
+        <div class="col-md-7 center">
+          <h4>布偶猫</h4>
+          <p>布偶猫，发源于美国，又称“布拉多尔猫”，是一种杂交品种。是现存体型最大、体重最重的猫之一。头呈楔形，眼大而圆，被毛丰厚，四肢较长且富有肉感，尾长，身体柔软，毛色有重点色、手套色或双色等等。布偶猫较为温顺好静，对人友善。其美丽优雅又非常类似于狗的性格而又被称为"仙女猫"，"小狗猫"。特殊的外貌是布偶猫最大的特点之一。</p>
+        </div>   
+      </div> 
+      <div class="tab-pane row fade" id="02">
+        <div class="col-md-7 center">
+          <h4>暹（xiān）罗猫</h4>
+          <p>暹（xiān）罗猫是世界著名的短毛猫，也是短毛猫的代表品种。种族历史暹罗猫原产于泰国（故名暹罗），在 200多年前，这种珍贵的猫仅在泰国的皇宫和大寺院中饲养，是足不出户的贵族。作为一种著名的宠物猫，暹罗猫能够较好适应主人当地的气候，暹罗猫性格刚烈好动，机智灵活，好奇心特强，善解人意。。</p>
+        </div>
+        <div class="col-md-5"> 
+          <img src="img/index/tab-2.jpg" class="img-responsive center-block img-circle">
+        </div>   
+      </div>
+      <div class="tab-pane row fade" id="03">
+        <div class="col-md-5"> 
+          <img src="img/index/tab-3.jpg" class="img-responsive center-block img-circle">
+        </div>
+        <div class="col-md-7 center">
+          <h4>苏格兰折耳猫</h4>
+          <p>苏格兰折耳猫(学名：Felis silvestris catus，英文名：Scottish Fold)是猫的一种在耳朵有基因突变的猫种。由于这猫种最初在苏格兰发现，所以以它的发现地和身体特征而命名。这种猫在软骨部份有一个折，使耳朵向前屈折，并指向头的前方。也正因如此，这种猫患有先天患有骨科疾病，时常用坐立的姿势来缓解痛苦</p>
+        </div>   
+      </div>   
+      <div class="tab-pane row fade" id="04"> 
+        <div class="col-md-7 center">
+          <h4>英国短毛猫</h4>
+          <p>英国短毛猫，体形圆胖，四肢粗短发达，被毛短而密，头大脸圆，温柔平静，对人友善，极易饲养。在英国本地很早就获得认可，1901年，还出现其猫种之理想形象。它原是一种体型相当大又结实的蓝猫，过了1970年，毛色和外型都开始改变。体型越来越小，毛色的种类也变得丰富，所有的改变都朝向优雅的风格。英短银渐层是英短的一个分支，在国际上非常受欢迎</p>
+        </div>
+        <div class="col-md-5"> 
+          <img src="img/index/tab-4.jpg" class="img-responsive center-block img-circle">
+        </div>   
+      </div>
+     <div class="tab-pane row fade" id="05">
+        <div class="col-md-5"> 
+          <img src="img/index/tab-5.jpg" class="img-responsive center-block img-circle">
+        </div>
+        <div class="col-md-7 center">
+          <h4>美国短毛猫</h4>
+          <p>美国短毛猫（American Shorthair）是原产美国的一种猫，其祖先为欧洲早期移民带到北美的猫种，与英国短毛猫和欧洲短毛猫同类。据记载，五月花号上携带了数只猫以帮助除鼠。该品种的猫是在街头巷尾收集来的猫当中选种、并和进口品种如英国短毛猫、缅甸猫和波斯猫杂交培育而成。美国短毛猫素以体格魁伟，骨胳粗壮，肌肉发达，生性聪明，性格温顺而著称，是短毛猫类中大型品种。被毛厚密，毛色多达30余种，其中银色条纹品种尤为名贵。</p>
+        </div>   
+      </div>
+      <div class="tab-pane row fade" id="06">
+        <div class="col-md-7 center">
+          <h4>波斯猫</h4>
+          <p>波斯猫（Persian cat）是最常见的长毛猫。它是以阿富汗的土种长毛猫和土耳其的安哥拉长毛猫为基础，在英国经过100多年的选种繁殖，于1860年诞生的一个品种。波斯猫有一张讨人喜爱的面庞，长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的一种纯种猫，占有极其重要的地位。</p>
+        </div>
+        <div class="col-md-5"> 
+          <img src="img/index/tab-6.jpg" class="img-responsive center-block img-circle">
+        </div>   
+      </div>    
+  </div>
+</div>
+<!-- shop -->
+<div class="shop container">
+  <h3>猫猫商品推荐</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#shop-1" data-toggle="tab">幼猫</a></li>
+    <li><a href="#shop-2" data-toggle="tab">成猫</a></li>
+    <li><a href="#shop-3" data-toggle="tab">老猫</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active fade in" id="shop-1">
+      <ul class="row">
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+      </ul>
+    </div>
+    <div class="tab-pane fade" id="shop-2">
+      <ul class="row">
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+      </ul>
+    </div>
+    <div class="tab-pane fade" id="shop-3">
+      <ul class="row">
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        <li class="col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- department -->
+<div class="department container">
+  <h3>猫咪百货</h3>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading green">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            粮食专区
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body row">
+          <div class="col-md-9">
+            <div class="container-fluid">
+              <ul class="row">
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                 <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+              </ul>
+            </div>  
+          </div>
+          <div class="col-md-3 side hidden-xs hidden-sm">
+            <a href="#"><img src="img/index/de-side-1.jpg" class="center-block"></a>
+            <a href="#"><img src="img/index/de-side-2.jpg" class="center-block"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading blue">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            医疗保健
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse in">
+        <div class="panel-body row">
+          <div class="col-md-9">
+            <div class="container-fluid">
+              <ul class="row">
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                 <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+              </ul>
+            </div>  
+          </div>
+          <div class="col-md-3 side hidden-xs hidden-sm">
+            <a href="#"><img src="img/index/de-side-1.jpg" class="center-block"></a>
+            <a href="#"><img src="img/index/de-side-2.jpg" class="center-block"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading pink">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            生活品质
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse in">
+        <div class="panel-body row">
+          <div class="col-md-9">
+            <div class="container-fluid">
+              <ul class="row">
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-1.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-2.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮3.5kg S27</a><p>¥207.00<span class="pull-right">已售14011</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-3.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-4.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                 <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-5.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+                <li class="col-md-3 col-sm-4 col-xs-6"><a href="#"><img src="img/index/shop-6.jpg" alt="" class="center-block"></a><a href="#">法国皇家ROYAL CANIN 室内成猫粮7岁以上老年猫粮1.5kg S27</a><p>¥95.00<span class="pull-right">已售26428</span></p></li>
+              </ul>
+            </div>  
+          </div>
+          <div class="col-md-3 side hidden-xs hidden-sm">
+            <a href="#"><img src="img/index/de-side-1.jpg" class="center-block"></a>
+            <a href="#"><img src="img/index/de-side-2.jpg" class="center-block"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>  
+</div>
+<!-- footer -->
+<footer id="footer" class="hidden-xs">
+  <nav class="list">
+    <ul>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">企业合作</a></li>
+      <li><a href="#">人才招聘</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li><a href="#">意见反馈</a></li>
+      <li><a href="#">友情链接</a></li>
+    </ul>
+  </nav>
+  <p class="text-center">© 2016 imooc.com  京ICP备13046642号</p>
+</footer>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>猫作为性情温顺，聪明活泼的动物，作为家庭宠物已经有长久的历史，在欧美国家，家猫程度尤其很高。在20世纪初，美国的一名动物学家首次发明了猫树（cat tree，猫爬架）这种产品，目的就是为了治疗日益严重的家猫抑郁症。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">知道啦</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+
+   <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
